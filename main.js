@@ -1,15 +1,7 @@
-//* Type Anotations
-var n;
-var b;
-var s;
-var a;
-var array = [1, 2, 3];
-//*Enums
-var Colors;
-(function (Colors) {
-    Colors[Colors["Red"] = 0] = "Red";
-    Colors[Colors["Green"] = 1] = "Green";
-    Colors[Colors["Blue"] = 2] = "Blue";
-})(Colors || (Colors = {}));
-;
-var backgroundColor = Colors.Red;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+//*Import the Components
+var like_component_1 = require("./like.component");
+//* Objects 
+var like = new like_component_1.LikeComponent(7, true);
+like.click();
